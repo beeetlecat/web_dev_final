@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Alegreya;
+    src: url(../fonts/Alegreya/static/Alegreya-Regular.ttf);
+}
+
+@font-face {
+    font-family: Anaktoria;
+    src: url(../fonts/anaktoria/Anaktoria.woff);
+}
+
+@font-face {
+    font-family: Margo;
+    src: url(../fonts/margoserif-regular-webfont.woff);
+}
+
+html {
+    
+}
