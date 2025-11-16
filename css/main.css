@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Alegreya;
+    src: url(../fonts/Alegreya/static/Alegreya-Regular.ttf);
+}
+
+@font-face {
+    font-family: Anaktoria;
+    src: url(../fonts/anaktoria/Anaktoria.woff);
+}
+
+@font-face {
+    font-family: Margo;
+    src: url(../fonts/margoserif-regular-webfont.woff);
+}
+
+html {
+    /* apply a natural box layout model to all elements, but allowing components to change */
+  box-sizing: border-box;
+
+    --color-druid-green: #595c2f;
+    --color-midnight-ivy:#2e3117;
+    --color-dusty-pink:#d4b2a3;
+    --color-brick-red:#793113;
+    --color-parchment:#f7f5f3;
+    --color-frosted-moss:#a2a79b;
+    --color-royal-ink:#1e1e1e;
+
+    --font-body: Alegreya, serif;
+    --font-headings: Margo, serif;
+    --font-main: Anaktoria, serif;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p {
+    font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-main);
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: grey;
+}
+
+.dot--druid-green {
+    background-color: var(--color-druid-green);
+}
+
+.dot--midnight-ivy {
+    background-color: var(--color-midnight-ivy);
+}
+
+.dot--dusty-pink {
+    background-color: var(--color-dusty-pink);
+}
+
+.dot--brick-red {
+    background-color: var(--color-brick-red);
+}
+
+.dot--parchment {
+    background-color: var(--color-parchment);
+}
+
+.dot--frosted-moss {
+    background-color: var(--color-frosted-moss);
+}
+.dot--royal-ink {
+    background-color: var(--color-royal-ink);
+}
+
