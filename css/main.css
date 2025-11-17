@@ -41,12 +41,12 @@ body {
   box-sizing: inherit;
 }
 
-p {
+p, tr p {
     font-family: var(--font-body);
     line-height: 1.5;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, th {
     font-family: var(--font-main);
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -91,7 +91,7 @@ main {
     main {margin-left: 0}
 }
 
-@media screen and (max-width 400px) {
+@media screen and (max-width: 400px) {
     .navbar a {
         text-align: center;
         float: none;
@@ -99,8 +99,8 @@ main {
 }
 
 .dot {
-  height: 25px;
-  width: 25px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   display: inline-block;
   background-color: grey;
@@ -134,13 +134,33 @@ main {
     background-color: var(--color-royal-ink);
 }
 
+.colors {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30vw, 50vw));
+    grid-template-rows: minmax(1fr, 1fr 1fr 1fr);
+    margin: 2em;
+}
+
+.colors__color {
+    padding: 10px;
+    margin: 10px;
+}
+
+.colors__color p {
+    margin: 0;  
+    padding: 0;
+}
+
+.colors__color_name {
+    font-size: 200%;
+}
+
 img {
     max-width: 100%;
 }
 
 .component__img {
     border: 1px solid var(--color-midnight-ivy);
-    overflow-x: scroll;
 }
 
 /** announcement section
@@ -173,6 +193,7 @@ img {
     display: inline-block;
 
 }
+
 
 
 
