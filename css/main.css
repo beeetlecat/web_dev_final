@@ -34,8 +34,6 @@ html {
 }
 
 
-body {
-}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -44,6 +42,7 @@ body {
 p, tr p {
     font-family: var(--font-body);
     line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, th, .uppercase {
@@ -51,6 +50,11 @@ h1, h2, h3, h4, th, .uppercase {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 400;
+}
+
+.margo {
+    font-family: var(--font-headings);
+    color: var(--color-parchment);
 }
 
 .lowercase {
@@ -87,38 +91,6 @@ a {
 main {
     padding: 1rem;
     margin-left: 200px;
-}
-
-@media screen and (max-width: 770px) {
-    .navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .navbar a {float:left}
-    main {margin-left: 0}
-
-    .component__header__navbar {
-        font-size: 0.5em;
-    }
-
-    .component__blockquote p {
-        font-size: 2em;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .navbar a {
-        text-align: center;
-        float: none;
-    }
-
-    .component__header__navbar a{
-        display: none;
-    }
-
-    
 }
 
 .dot {
@@ -159,7 +131,7 @@ main {
 
 .colors {
     display: grid;
-    grid-template-columns: repeat(2, minmax(30vw, 50vw));
+    grid-template-columns: repeat(2, 200px);
     grid-template-rows: minmax(1fr, 1fr 1fr 1fr);
     margin: 2em;
 }
@@ -181,6 +153,7 @@ main {
 img {
     max-width: 100%;
 }
+
 
 .component__img {
     border: 1px solid var(--color-midnight-ivy);
@@ -232,8 +205,8 @@ img {
     width: 100%;
     max-width: 600px;
     text-align: center;
-    color: var(--color-druid-green);
     font-size: 0.9em;
+    color: var(--color-druid-green);
 }
 
 .component__header__navbar {
@@ -270,9 +243,68 @@ img {
     max-width: 800px;
     margin: 0 auto;
 }
-.component__blockquote__text p {
-    padding: 0;
+.component__blockquote__text {
+    max-width: 750px;
 }
 
+.component__blockquote__text p {
+    padding: 0;
+    margin: 0;
+}
 
+.component__about__text {
+    background-image: url(../imgs/cardboard_ivory.jpg);
+    font-family: var(--font-body);
+    text-align: center;
+    max-width: 500px;
+}
 
+.component__about__text p {
+    padding: 12px 0;
+}
+
+.component__main__headings {
+    background-color: var(--color-midnight-ivy);
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    max-width: 550px;
+}
+
+.component__main__headings .margo, p {
+    margin: 0;
+}
+
+@media screen and (max-width: 770px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navbar a {float:left}
+        main {margin-left: 0}
+
+    .component__header__navbar {
+        font-size: 0.5em;
+    }
+
+    .component__blockquote p {
+        font-size: 2em;
+    }
+
+    .component__about__text p {
+        font-size: 2em
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        text-align: center;
+        float: none;
+    }
+
+    .component__header__navbar a {
+        display: none;
+    }
+}
