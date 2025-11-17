@@ -53,6 +53,11 @@ h1, h2, h3, h4, th, .uppercase {
     font-weight: 400;
 }
 
+.lowercase {
+    font-family: var(--font-main);
+    text-transform: lowercase;
+}
+
 a {
     text-decoration: none;
 }
@@ -84,7 +89,7 @@ main {
     margin-left: 200px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     .navbar {
         width: 100%;
         height: auto;
@@ -96,6 +101,10 @@ main {
 
     .component__header__navbar {
         font-size: 0.5em;
+    }
+
+    .component__blockquote p {
+        font-size: 2em;
     }
 }
 
@@ -240,6 +249,29 @@ img {
     text-wrap: nowrap;
     min-width: none;
     overflow: hidden;
+}
+
+.component__blockquote {
+    background-color: rgb(0, 0, 0, 0.5);
+    background-image: url(../imgs/blockquote_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    max-width: 1300px;
+}
+
+.component__blockquote p {
+    color: var(--color-parchment);
+    opacity: 0.8;
+    padding: 12rem 3rem;
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.component__blockquote__text p {
+    padding: 0;
 }
 
 
