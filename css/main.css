@@ -53,6 +53,10 @@ h1, h2, h3, h4, th, .uppercase {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .navbar h1 {
     font-size: 1em;
@@ -71,7 +75,6 @@ h1, h2, h3, h4, th, .uppercase {
     display: block;
     font-family: var(--font-main);
     text-transform: lowercase;
-    text-decoration: none;
     color: inherit;
     padding: 0 10px;
     }
@@ -90,6 +93,10 @@ main {
 
     .navbar a {float:left}
     main {margin-left: 0}
+
+    .component__header__navbar {
+        font-size: 0.5em;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -97,6 +104,12 @@ main {
         text-align: center;
         float: none;
     }
+
+    .component__header__navbar a{
+        display: none;
+    }
+
+    
 }
 
 .dot {
@@ -211,7 +224,22 @@ img {
     max-width: 600px;
     text-align: center;
     color: var(--color-druid-green);
-    font-size: 0.9em;;
+    font-size: 0.9em;
+}
+
+.component__header__navbar {
+    background-image: url(../imgs/cardboard_ivory.jpg);
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.component__header__navbar a {
+    padding: 10px;
+    color: var(--color-royal-ink);
+    font-size: 0.8em;
+    text-wrap: nowrap;
+    min-width: none;
+    overflow: hidden;
 }
 
 
