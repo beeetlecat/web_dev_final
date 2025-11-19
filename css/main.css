@@ -275,6 +275,20 @@ img {
     margin: 0;
 }
 
+p.lowercase {
+    border: solid 1px var(--color-royal-ink);
+    padding: 2rem;
+    margin: 0;
+    display: inline-block;
+    letter-spacing:normal;
+    font-size: 1.05em;
+}
+
+.component__locations-grid__grid-item--text {
+    border: solid 1px var(--color-royal-ink);
+    text-align: center;
+}
+
 @media screen and (max-width: 770px) {
     .navbar {
         width: 100%;
