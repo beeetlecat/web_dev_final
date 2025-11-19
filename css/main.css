@@ -54,7 +54,10 @@ h1, h2, h3, h4, th, .uppercase {
 
 .margo {
     font-family: var(--font-headings);
-    color: var(--color-parchment);
+}
+
+.margo--red {
+    color: var(--color-brick-red);
 }
 
 .lowercase {
@@ -200,7 +203,7 @@ img {
     max-width: max-content;
 }
 
-.component__header__tagline {
+.header__tagline {
     background-image: url(../imgs/cardboard_ivory.jpg);
     width: 100%;
     max-width: 600px;
@@ -209,13 +212,13 @@ img {
     color: var(--color-druid-green);
 }
 
-.component__header__navbar {
+.header__navbar {
     background-image: url(../imgs/cardboard_ivory.jpg);
     display: flex;
     flex: 1 1 100%;
 }
 
-.component__header__navbar a {
+.header__navbar a {
     padding: 10px;
     color: var(--color-royal-ink);
     font-size: 0.8em;
@@ -224,7 +227,7 @@ img {
     overflow: hidden;
 }
 
-.component__blockquote {
+.blockquote {
     background-color: rgb(0, 0, 0, 0.5);
     background-image: url(../imgs/blockquote_background.jpg);
     background-position: center;
@@ -235,7 +238,7 @@ img {
     max-width: 1300px;
 }
 
-.component__blockquote p {
+.blockquote p {
     color: var(--color-parchment);
     opacity: 0.8;
     padding: 12rem 3rem;
@@ -243,27 +246,27 @@ img {
     max-width: 800px;
     margin: 0 auto;
 }
-.component__blockquote__text {
+.blockquote__text {
     max-width: 750px;
 }
 
-.component__blockquote__text p {
+.blockquote__text p {
     padding: 0;
     margin: 0;
 }
 
-.component__about__text {
+.about__text {
     background-image: url(../imgs/cardboard_ivory.jpg);
     font-family: var(--font-body);
     text-align: center;
     max-width: 500px;
 }
 
-.component__about__text p {
+.about__text p {
     padding: 12px 0;
 }
 
-.component__main__headings {
+.main__headings {
     background-color: var(--color-midnight-ivy);
     font-size: 2em;
     text-align: center;
@@ -271,8 +274,9 @@ img {
     max-width: 550px;
 }
 
-.component__main__headings .margo, p {
+.main__headings .margo {
     margin: 0;
+    color: var(--color-parchment);
 }
 
 p.lowercase {
@@ -284,9 +288,59 @@ p.lowercase {
     font-size: 1.05em;
 }
 
-.component__locations-grid__grid-item--text {
+.locations-grid__screenshot {
+    display: inline-block;
+}
+
+.locations-grid__grid-item--text {
     border: solid 1px var(--color-royal-ink);
     text-align: center;
+    display: inline-block;
+}
+
+.locations-grid__grid-item--text.text-only {
+    border: none;
+    display: inline;
+    margin: 0;
+    text-align: left;
+}
+
+.locations-grid__grid-item--text.text-only p {
+    text-align: center;
+}
+
+.locations-grid.margo {
+    font-size: 2em;
+    margin: 1em 0 0 0;
+}
+
+.locations-grid__grid-item--text p {
+    line-height: 1.8em;
+}
+
+.locations-grid__grid-item--text .special-text {
+    padding: 1em 0;
+}
+
+.illustration {
+    width: 40%;
+}
+
+.locations-grid__more-button {
+    background-color: var(--color-druid-green);
+    text-decoration: none;
+    color: var(--color-parchment);
+    font-size: 1.4em;
+    padding: 0.8rem;
+    display: inline-block;
+    margin: 1.5rem 0;
+    width: 100%;
+    font-weight: 400;
+}
+
+.locations-grid__grid-item--text__text-only {
+    margin: 2rem auto;
+    display: block;
 }
 
 @media screen and (max-width: 770px) {
@@ -299,15 +353,15 @@ p.lowercase {
     .navbar a {float:left}
         main {margin-left: 0}
 
-    .component__header__navbar {
+    .header__navbar {
         font-size: 0.5em;
     }
 
-    .component__blockquote p {
+    .blockquote p {
         font-size: 2em;
     }
 
-    .component__about__text p {
+    .about__text p {
         font-size: 2em
     }
 }
@@ -318,7 +372,7 @@ p.lowercase {
         float: none;
     }
 
-    .component__header__navbar a {
+    .header__navbar a {
         display: none;
     }
 }

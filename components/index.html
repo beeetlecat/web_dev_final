@@ -190,7 +190,7 @@
                         src="../imgs/2_header/cover_tagline.png"
                         alt="header business tagline">
 
-                    <div class="component__header__tagline">
+                    <div class="header__tagline">
                         <p class="uppercase">Backyard micro-weddings for those who believe in fairytales <br> The greenhouse & the enchanted cottage <br> Micro-weddings, elopements & Airbnb <br> Forest, Virginia <br> Est. 2017</p>
                     </div>
 
@@ -201,7 +201,7 @@
                         src="../imgs/2_header/cover_navbar.png"
                         alt="header navigation bar">
 
-                    <div class="component__header__navbar">
+                    <div class="header__navbar">
                         <a class="uppercase" class="uppercase" href="">Home</a>
                         <a class="uppercase" href="">About</a>
                         <a class="uppercase" href="">Weddings</a>
@@ -225,9 +225,9 @@
                         src="../imgs/3_blockquote/hook.png"
                         alt="blockquote">
 
-                <div class="component__blockquote">
+                <div class="blockquote">
                     <p class="lowercase">Micro-weddings are where real magic dwells, surrounded by those closest to you. With much of your day crafted in-house, your vision brought to life by us, your day unfolds like a fairytale. Nature does the work, deeply personal and a fraction of the cost. Less stress, more magic. </p>
-                </div> <!--component__blockquote-->
+                </div> <!--blockquote-->
 
                 <h3>Blockquote Text</h3>
                 <p>Anaktoria, lowercase font. 0.8 opacity parchment color. Centered text.</p>
@@ -237,9 +237,9 @@
                         src="../imgs/3_blockquote/hook_text.png"
                         alt="blockquote text">
 
-                <div class="component__blockquote component__blockquote__text">
+                <div class="blockquote blockquote__text">
                     <p class="lowercase">Micro-weddings are where real magic dwells, surrounded by those closest to you. With much of your day crafted in-house, your vision brought to life by us, your day unfolds like a fairytale. Nature does the work, deeply personal and a fraction of the cost. Less stress, more magic. </p>
-                </div> <!--component__blockquote component__blockquote__text-->
+                </div> <!--blockquote blockquote__text-->
             </div><!--component-->
 
             <div class="component">
@@ -257,7 +257,7 @@
                         src="../imgs/4_about/description_text.png"
                         alt="About section text">
 
-                <div class="component__about__text">
+                <div class="about__text">
                     <p>An inclusive micro-wedding venue that handles everything needed in-house. Customized to our couple's unique vision.</p>
 
                     <p>For the ones that have dreamed about their wedding day their entire lives, and for the ones who never wanted a wedding.</p>
@@ -306,7 +306,7 @@
                     src="../imgs/6_locations/locations_header.png"
                     alt="locations heading">
                 
-                <div class="component__main__headings">
+                <div class="main__headings">
                     <p class="margo">Three Magical Locations</p>
                 </div>
 
@@ -328,19 +328,21 @@
                 <h3>Grid Item - Text</h3>
                 <p>Solid 1px border.</p>
                 <img
+                    class="locations-grid__screenshot"
                     srcset="../imgs/6_locations/locattions_greenhouse.png 2x"
                     src="../imgs/6_locations/locattions_greenhouse.png"
                     alt="locations greenhouse">
 
-                <div class="component__locations-grid__grid-item--text">
-                    <h4>Greenhouse</h4>
-                    <img src="../imgs/illustrations/greenhouse-clear-background.png" alt="illustration of the greenhouse">
+                <div class="locations-grid__grid-item--text">
+                    <h4 class="margo margo--red locations-grid">Greenhouse</h4>
+                    <img src="../imgs/illustrations/greenhouse-clear-background.png" alt="illustration of the greenhouse" class="illustration">
                     <p>Turn-Key Venue</p>
                     <p>Up to 50 Wedding Guests</p>
+                    <p>On-Site Coordination</p>
                     <p>Chairs + Tables</p>
-                    <p>Couple Only Options Available</p>
-                    <a href="#!" class="lowercase">more info</a>
-                </div>
+                    <p class="special-text">Couple Only Options Available</p>
+                    <a href="#!" class="locations-grid__more-button lowercase">more info</a>
+                </div><!--locations-grid__grid-item--text-->
 
                 <h3>Grid Item - Image</h3>
                 <img
@@ -348,22 +350,29 @@
                     src="../imgs/6_locations/locations_greenhouse_image.png"
                     alt="greenhouse image">
 
-
-                <h3>Grid Item - Text Heading</h3>
-                <p>Heading font. Centered. Brick red color. </p>
-                <img
-                    srcset="../imgs/6_locations/locations_greenhouse_header.png 2x"
-                    src="../imgs/6_locations/locations_greenhouse_header.png"
-                    alt="greenhouse heading">
-
+                    <h3>Grid Item - Text Heading</h3>
+                    <p>Heading font. Centered. Brick red color. </p>
+                    <img
+                        srcset="../imgs/6_locations/locations_greenhouse_header.png"
+                        src="../imgs/6_locations/locations_greenhouse_header.png"
+                        alt="greenhouse heading">
+                    <h4 class="margo margo--red locations-grid">Greenhouse</h4>
+                
 
                 <h3>Grid Item - Text Content</h3>
                 <p>Body font. Centered.</p>
                 <img
+                    class="locations-grid__grid-item--text__text-only"
                     srcset="../imgs/6_locations/locations_greenhouse_descrription.png 2x"
                     src="../imgs/6_locations/locations_greenhouse_descrription.png"
                     alt="greenhouse description">
-
+                <div class="locations-grid__grid-item--text text-only">
+                    <p>Turn-Key Venue</p>
+                    <p>Up to 50 Wedding Guests</p>
+                    <p>On-Site Coordination</p>
+                    <p>Chairs + Tables</p>
+                    <p class="special-text">Couple Only Options Available</p>
+                </div> <!--locations-grid__grid-item--text text-only-->
 
                 <h3>Large Block Content</h3>
                 <p>Follows same text content and button format as grid item - text </p>
