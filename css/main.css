@@ -69,7 +69,7 @@ a {
     text-decoration: none;
 }
 
-.announcement__social-icons {
+.header__social-icons {
     /* animation-fill-mode: both; */
     /* box-sizing: border-box; */
     /* display: block; */
@@ -122,12 +122,12 @@ main {
 }
 
 .dot {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   display: inline-block;
   background-color: grey;
-  margin: 10px;
+  margin: 0 0 1rem 0;
 }
 
 .dot--druid-green {
@@ -148,7 +148,7 @@ main {
 
 .dot--parchment {
     background-color: var(--color-parchment);
-    border: solid 1px lightgrey;
+    border: solid 2px lightgrey;
 }
 
 .dot--frosted-moss {
@@ -167,6 +167,7 @@ main {
 .colors__color {
     padding: 10px;
     margin: 10px;
+    text-align: center;
 }
 
 .colors__color p {
@@ -175,7 +176,16 @@ main {
 }
 
 .colors__color_name {
-    font-size: 200%;
+    font-size: 100%;
+}
+
+.colors__color__hex {
+    color: var(--color-frosted-moss);
+    font-size: 80%;
+}
+
+.colors__color__default {
+    font-size: 80%;
 }
 
 img {
@@ -187,11 +197,11 @@ img {
     border: 1px solid var(--color-midnight-ivy);
 }
 
-/** announcement section
+/** header section
 *notes: currently items are on two lines. Unsure how to make dateopening text center while icons are to the right. Possibly absolute positioning, but then how do I get the items to be next to eachother on the same line?
 **/
 
-.component--announcement {
+.component--header {
     background-color: var(--color-druid-green);
     border: 1px solid var(--color-midnight-ivy);
     text-align: center;
@@ -199,21 +209,21 @@ img {
     position: relative;
 }
 
-.component--announcement h4 {
+.component--header h4 {
     color: var(--color-parchment);
     font-weight: 400;
     padding: 1em;
     font-size: 0.8em;
 }
 
-.component--announcement p {
+.component--header p {
     color: var(--color-parchment);
     font-size: 0.8em;
     position: absolute;
     background-color: red;
 }
 
-.component--announcement--text {
+.component--header--text {
     background-color: var(--color-druid-green);
     color: var(--color-parchment);
     font-size: .9em;
@@ -221,14 +231,14 @@ img {
     max-width: max-content;
 }
 
-.component--announcement--icons {
+.component--header--icons {
     background-color: var(--color-druid-green);
     color: var(--color-parchment);
     font-size: .9em;
     max-width: max-content;
 }
 
-.header__tagline {
+.Hero__tagline {
     background-image: url(../imgs/cardboard_ivory.jpg);
     width: 100%;
     max-width: 600px;
@@ -237,13 +247,13 @@ img {
     color: var(--color-druid-green);
 }
 
-.header__navbar {
+.Hero__navbar {
     background-image: url(../imgs/cardboard_ivory.jpg);
     display: flex;
     flex: 1 1 100%;
 }
 
-.header__navbar a {
+.Hero__navbar a {
     padding: 10px;
     color: var(--color-royal-ink);
     font-size: 0.8em;
@@ -378,7 +388,7 @@ p.lowercase {
     .navbar a {float:left}
         main {margin-left: 0}
 
-    .header__navbar {
+    .Hero__navbar {
         font-size: 0.5em;
     }
 
@@ -397,7 +407,7 @@ p.lowercase {
         float: none;
     }
 
-    .header__navbar a {
+    .Hero__navbar a {
         display: none;
     }
 }
