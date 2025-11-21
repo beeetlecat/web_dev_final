@@ -57,7 +57,7 @@
                 src="../imgs/4_about/description_text.png" alt="#"> -->
 
             <h3 class="Alegreya">Alegreya</h3> 
-            <p class="body">Regular weight (400). 1.5 line height. Body copy.</p>
+            <p class="body">Regular weight (400). 1.5 line height. 1px letter spacing. Body copy.</p>
             
             
             <h2>Colors</h2>
@@ -424,29 +424,65 @@
                     src="../imgs/8_steps/steps.png"
                     alt="Section for next steps">
 
-                <h3>Steps</h3>
+                <div class="steps__container">
+                    <h3>Next Steps</h3>
+
+                    <div class="steps__steps">
+                        <div class="steps__step">
+                            <p class="uppercase step__number">1</p>
+                            <p>Is our pricing within your budget? Is VA your desired location? Did you read our FAQs? Contact us!</p>
+                            <img src="../imgs/illustrations/wedding-expanded-outline-individual_invitation-letter.png" alt="envelope with a heart">
+                        </div>
+
+                        <div class="steps__step">
+                            <p class="uppercase step__number">2</p>
+                            <p>An email was sent with all pricing information. Ready to book? Submit the brochure that was sent over!</p>
+                            <img src="../imgs/illustrations/wedding-expanded-outline-individual_calendar.png" alt="calendar with a heart">
+                        </div>
+
+                        <div class="steps__step">
+                            <p class="uppercase step__number">3</p>
+                            <p>Then, select your date from our availability given. View your proposal, sign the contract & send over your deposit.</p>
+                            <img src="../imgs/illustrations/business-icons-outline-individual_document.png" alt="document"">
+                        </div>
+
+                        <div class="steps__step">
+                            <p class="uppercase step__number">4</p>
+                            <p>You're officially in the books! We'll take it from here & you can count down the days until your wedding!</p>
+                            <img src="../imgs/illustrations/wedding-expanded-outline-individual_champagne-glasses.png" alt="champagne glass cheers">
+                        </div> <!--Steps__step-->
+                    </div> <!--steps__steps-->
+                </div> <!--steps__container-->
+
+                 <h3>Step</h3>
                 <p>Solid 1px border. Centered. 0.2 opacity white background.</p>
                 <img
                     srcset="../imgs/8_steps/steps_section1.png 2x"
                     src="../imgs/8_steps/steps_section1.png"
                     alt="step 1">
 
-                <h3>Step Content</h3>
+                <h3>Step Number</h3>
                 <p>Alegreya font.</p>
                 <img
                     srcset="../imgs/8_steps/steps_section1_heading.png 2x"
                     src="../imgs/8_steps/steps_section1_heading.png"
                     alt="Step 1 Heading">
 
-                <h3>Steps Section</h3>
-                <p>Alegreya font.</p>
+                <p class="uppercase step__number">1</p>
+
+                <h3>Step Desciption</h3>
+                <p>Alegreya font. Normal letter spacing.</p>
                 <img
                     srcset="../imgs/8_steps/steps_section1_text.png 2x"
                     src="../imgs/8_steps/steps_section1_text.png"
                     alt="Step 1 text">
+                
+                <div class="steps__description">
+                    <p>Is our pricing within your budget? Is VA your desired location? Did you read our FAQs? Contact us!</p>
+                </div>
             </div><!--component-->
 
-            <div class="component">
+            <div class="component component__footer">
                 <h3>Footer</h3>
                 <p>Centered.</p>
                 <img
@@ -468,12 +504,16 @@
                     src="../imgs/9_footer/footer_section1_heading.png"
                     alt="footer link column heading">
 
+                <p class="lowercase">navigate</p>
+
                 <h3>Footer Socials Text</h3>
                 <p>Anaktoria font. lowercase</p>
                 <img
                     srcset="../imgs/9_footer/footer_socials_text.png 2x"
                     src="../imgs/9_footer/footer_socials_text.png"
                     alt="footer socials text">
+                
+                <p class="lowercase">wander with us</p>
 
                 <h3>Footer Details</h3>
                 <p>Midnight ivy background color. Centered. Parchment text color. Anaktoria, uppercase font</p>
@@ -481,7 +521,23 @@
                     srcset="../imgs/9_footer/footer_details.png 2x"
                     src="../imgs/9_footer/footer_details.png"
                     alt="footer contact and copyright info">
-            </div><!--component-->
+
+                <div class="footer__details">
+                    <p class="uppercase">
+                        Located in Forest, Virginia <br>
+                        hello@vaughan-house.com  |  (ph) 469-765-5230 <br>
+                        private property | Tours by Appt Only <br>
+                        (c) Vaughan house 2017-2025
+                    </p>
+
+                    <p class="uppercase">
+                        The original backyard greenhouse micro-wedding venue <br>
+                        the greenhouse design and cottage design are protected by copyright. do not copy.
+                    </p>
+                </div>
+
+                
+            </div><!--component component__footer-->
 
             <div class="component component__illustrations">
                 <h3>Illustrations</h3>
