@@ -378,6 +378,12 @@ p.lowercase {
     display: block;
 }
 
+.ivy, .component__illustrations img {
+    border: 5px dotted var(--color-frosted-moss);
+    display: inline-block;
+    margin: 5px;
+}
+
 @media screen and (max-width: 770px) {
     .navbar {
         width: 100%;
