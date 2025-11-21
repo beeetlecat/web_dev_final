@@ -388,6 +388,7 @@ p.lowercase {
     display: flex;
     flex: 1 1 auto;
     justify-content: space-around;
+    /* max-width: 800px; */
     margin: 0 7em;
 }
 
@@ -482,4 +483,12 @@ p.lowercase {
     .Hero__navbar a {
         display: none;
     }
+
+    .steps__steps {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    margin: 0;
+}
 }
