@@ -121,6 +121,8 @@ main {
     margin-left: 200px;
 }
 
+
+
 .dot {
   height: 80px;
   width: 80px;
@@ -197,10 +199,6 @@ img {
     border: 1px solid var(--color-midnight-ivy);
 }
 
-/** header section
-*notes: currently items are on two lines. Unsure how to make dateopening text center while icons are to the right. Possibly absolute positioning, but then how do I get the items to be next to eachother on the same line?
-**/
-
 .component--header {
     background-color: var(--color-druid-green);
     border: 1px solid var(--color-midnight-ivy);
@@ -238,8 +236,15 @@ img {
     max-width: max-content;
 }
 
-.Hero__tagline {
+.component--paper {
     background-image: url(../imgs/cardboard_ivory.jpg);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero__tagline {
     width: 100%;
     max-width: 600px;
     text-align: center;
@@ -247,19 +252,23 @@ img {
     color: var(--color-druid-green);
 }
 
-.Hero__navbar {
-    background-image: url(../imgs/cardboard_ivory.jpg);
-    display: flex;
-    flex: 1 1 100%;
+.hero__navbar {
+    margin: auto;
 }
 
-.Hero__navbar a {
-    padding: 10px;
+.hero__navbar a {
+    padding: 1rem;
     color: var(--color-royal-ink);
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-wrap: nowrap;
+    display: inline-block;
     min-width: 0;
     overflow: hidden;
+}
+
+.hero__hr {
+    margin: 2px 0;
+    border: solid 1px var(--color-brick-red);
 }
 
 .blockquote {
@@ -291,7 +300,6 @@ img {
 }
 
 .about__text {
-    background-image: url(../imgs/cardboard_ivory.jpg);
     font-family: var(--font-body);
     text-align: center;
     max-width: 500px;
@@ -491,4 +499,8 @@ p.lowercase {
     justify-content: space-around;
     margin: 0;
 }
+}
+
+.incomplete {
+    box-shadow: inset 0 0 0 1000px rgba(255, 0, 0, 0.733);
 }
