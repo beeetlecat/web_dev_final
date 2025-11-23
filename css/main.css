@@ -83,6 +83,9 @@ a {
     display: inline-block;
 }
 
+img {
+    max-width: 100%;
+}
 
 svg {
     max-width: 18px;
@@ -120,8 +123,6 @@ main {
     padding: 1rem;
     margin-left: 200px;
 }
-
-
 
 .dot {
   height: 80px;
@@ -189,11 +190,6 @@ main {
 .colors__color__default {
     font-size: 80%;
 }
-
-img {
-    max-width: 100%;
-}
-
 
 .component__img {
     border: 1px solid var(--color-midnight-ivy);
@@ -299,10 +295,30 @@ img {
     margin: 0;
 }
 
+.about {
+    display: flex;
+    /* flex: 1 1 auto; */
+    justify-content: center;
+    margin: 0 0 3rem 0;
+}
+
+.about img {
+    flex-shrink: 2;
+    max-width: 100%;
+    align-self: center;
+}
+
 .about__text {
-    font-family: var(--font-body);
+    justify-content: center;
+    border: 1px solid var(--color-royal-ink);
+    padding: 5rem 4rem;
     text-align: center;
-    max-width: 500px;
+    max-width: 700px;
+    max-height: 600px;
+    min-width: none;
+    overflow: auto;
+    margin: 0 1rem;
+    flex-shrink: 1;
 }
 
 .about__text p {
@@ -459,6 +475,23 @@ p.lowercase {
     margin: 5px;
 }
 
+@media screen and (max-width: 1050px) {
+    .about img {
+        max-width: 30vw;
+    }
+
+    .about__text {
+        max-height: 450px;
+    }
+
+    .about__text p {
+        font-size: 2em;
+        font-size: 0.9em;
+    }
+
+}
+
+
 @media screen and (max-width: 770px) {
     .navbar {
         width: 100%;
@@ -477,8 +510,17 @@ p.lowercase {
         font-size: 2em;
     }
 
+    .about__text {
+        max-height: none;
+    }
+
     .about__text p {
-        font-size: 2em
+        font-size: 2em;
+        font-size: 0.8em;
+    }
+
+    .about img {
+        display: none;
     }
 }
 
@@ -493,12 +535,17 @@ p.lowercase {
     }
 
     .steps__steps {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    justify-content: space-around;
-    margin: 0;
-}
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .about__text {
+        max-height: none;
+        font-size: 1em;
+    }
 }
 
 .incomplete {
