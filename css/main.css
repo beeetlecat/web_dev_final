@@ -1,3 +1,5 @@
+
+/* Fonts */
 @font-face {
     font-family: Alegreya;
     src: url(../fonts/Alegreya/static/Alegreya-Regular.ttf);
@@ -12,6 +14,8 @@
     font-family: Margo;
     src: url(../fonts/margoserif-regular-webfont.woff);
 }
+
+/* Baseline styles */
 
 html {
     /* apply a natural box layout model to all elements, but allowing components to change */
@@ -32,8 +36,6 @@ html {
     background-color: var(--color-parchment);
 
 }
-
-
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -69,20 +71,6 @@ a {
     text-decoration: none;
 }
 
-.header__social-icons {
-    /* animation-fill-mode: both; */
-    /* box-sizing: border-box; */
-    /* display: block; */
-    /* outline: none; */
-    /* pointer-events: auto; */
-    /* position: absolute; */
-    /* transform-origin: 50% 50%; */
-    padding: 0.5rem 0;
-    margin:0.5rem 0;
-    background-color: var(--color-druid-green);
-    display: inline-block;
-}
-
 img {
     max-width: 100%;
 }
@@ -97,6 +85,17 @@ svg {
 h2 {
     margin-top: 5rem;
 }
+
+main {
+    padding: 1rem;
+    margin-left: 200px;
+}
+
+.component--paper {
+    background-image: url(../imgs/cardboard_ivory.jpg);
+}
+
+/* Navbar */
 
 .navbar h1 {
     font-size: 1em;
@@ -119,10 +118,7 @@ h2 {
     padding: 0 10px;
     }
 
-main {
-    padding: 1rem;
-    margin-left: 200px;
-}
+/* Colors */
 
 .dot {
   height: 80px;
@@ -195,6 +191,22 @@ main {
     border: 1px solid var(--color-midnight-ivy);
 }
 
+/* Header */
+
+.header__social-icons {
+    /* animation-fill-mode: both; */
+    /* box-sizing: border-box; */
+    /* display: block; */
+    /* outline: none; */
+    /* pointer-events: auto; */
+    /* position: absolute; */
+    /* transform-origin: 50% 50%; */
+    padding: 0.5rem 0;
+    margin:0.5rem 0;
+    background-color: var(--color-druid-green);
+    display: inline-block;
+}
+
 .component--header {
     background-color: var(--color-druid-green);
     border: 1px solid var(--color-midnight-ivy);
@@ -232,9 +244,7 @@ main {
     max-width: max-content;
 }
 
-.component--paper {
-    background-image: url(../imgs/cardboard_ivory.jpg);
-}
+/* Hero */
 
 .hero {
     text-align: center;
@@ -267,6 +277,8 @@ main {
     border: solid 1px var(--color-brick-red);
 }
 
+/* Blockquote */
+
 .blockquote {
     background-color: rgb(0, 0, 0, 0.5);
     background-image: url(../imgs/blockquote_background.jpg);
@@ -294,6 +306,8 @@ main {
     padding: 0;
     margin: 0;
 }
+
+/* About */
 
 .about {
     display: flex;
@@ -325,6 +339,8 @@ main {
     padding: 12px 0;
 }
 
+/* Main Page Sections */
+
 .main__headings {
     background-color: var(--color-midnight-ivy);
     font-size: 2em;
@@ -346,6 +362,8 @@ p.lowercase {
     letter-spacing:normal;
     font-size: 1.05em;
 }
+
+/* Locations grid */
 
 .locations-grid__screenshot {
     display: inline-block;
@@ -382,6 +400,13 @@ p.lowercase {
 
 .locations-grid__grid-item--text.text-only p {
     text-align: center;
+    margin: 2rem auto;
+    display: block;
+}
+
+.locations-grid__grid-item--text__text-only {
+    margin: 2rem auto;
+    display: block;
 }
 
 .locations-grid.margo {
@@ -419,6 +444,14 @@ p.lowercase {
     height: 100%;
     width: 100%;
 }
+
+/* Services Grid */
+
+.main__services-grid__item {
+
+}
+
+/* Steps */
 
 .steps__container {
     background-color: var(--color-frosted-moss);
@@ -479,6 +512,8 @@ p.lowercase {
     letter-spacing: normal;
 }
 
+/* Footer */
+
 .footer__details {
     text-align: center;
     background-color: var(--color-midnight-ivy);
@@ -487,10 +522,7 @@ p.lowercase {
     font-size: 80%;
 }
 
-.locations-grid__grid-item--text__text-only {
-    margin: 2rem auto;
-    display: block;
-}
+/* Illustrations + Decorative Elements */
 
 .ivy, .component__illustrations img {
     border: 5px dotted var(--color-frosted-moss);
