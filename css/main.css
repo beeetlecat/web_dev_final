@@ -447,8 +447,44 @@ p.lowercase {
 
 /* Services Grid */
 
-.main__services-grid__item {
+.main__services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 175px);
+    justify-content: space-between;
+}
 
+.main__services-grid__item {
+    text-align: center;
+    /* border: 1px solid var(--color-druid-green); */
+}
+
+.main__services-grid__item p {
+    font-size: 1.1em;
+}
+
+.crop {
+    width: 100px;
+    height: 125px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: auto;
+}
+
+.crop img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.main__services-grid__item-text {
+    text-align: center;
+    max-width: 100px;
+    font-size: 0.8em;
+
+}
+
+.services-grid__illustration {
+    width: 70%;
+    margin: 1rem 0 0 0;
 }
 
 /* Steps */
@@ -554,6 +590,21 @@ p.lowercase {
 
     .locations-grid__more-button {
         font-size: 1em;
+    }
+
+    .main__services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: space-around;
+    }
+
+    .services-grid__illustration {
+        width: 35%;
+        margin: 1rem 0 0 0;
+    }
+
+    .main__services-grid__item p {
+        font-size: 1.5em;
     }
 
 }
