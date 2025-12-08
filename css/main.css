@@ -433,7 +433,6 @@ p.lowercase {
 p.locations__blockquote {
     border: solid 1px var(--color-royal-ink);
     font-size: 1.2em;
-    /* text-wrap: none; */
     width: 100%;
     margin: 2rem 0;
     font-family: var(--font-main);
