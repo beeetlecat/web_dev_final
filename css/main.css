@@ -500,7 +500,6 @@ p.locations__blockquote {
     font-size: 1.4em;
     padding: 0.8rem;
     display: inline-block;
-    /* margin: 1.5rem 0; */
     width: 100%;
     font-weight: 400;
 }
@@ -602,7 +601,6 @@ p.locations__blockquote {
     display: flex;
     flex: 1 1 auto;
     justify-content: space-around;
-    /* max-width: 800px; */
     margin: 0 15em;
 }
 
@@ -867,7 +865,6 @@ p.locations__blockquote {
     .greenhouse {
         grid-row: 2 / 3;
     }
-    /* The greenhouse image has a gap under it that I cannot identify or figure out how to fill. */
 
     .cottage {
         grid-row: 4 / 5;
