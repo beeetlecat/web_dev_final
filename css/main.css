@@ -208,7 +208,6 @@ main {
     max-width: 100%5;
     position: relative;
     anchor-name: --header;
-    margin-bottom: 1rem;
 }
 
 .header h4 {
@@ -218,12 +217,6 @@ main {
     font-size: 0.8em;
     margin: 0;
 }
-
-/* .header p {
-    color: var(--color-parchment);
-    font-size: 0.8em;
-    position: absolute;
-} */
 
 .header--text {
     background-color: var(--color-druid-green);
@@ -243,10 +236,20 @@ main {
     top: anchor(top);
 }
 
+.ivy1 {
+    position: absolute;
+    position-anchor: --header;
+    top: anchor(5%);
+    right: anchor(102%);
+    width: 460px;
+}
+
 /* Hero */
 
 .hero {
     text-align: center;
+    padding-top: 1rem;
+    anchor-name: --hero;
 }
 
 .hero__tagline {
@@ -274,6 +277,15 @@ main {
 .hero__hr {
     margin: 2px 0;
     border: solid 1px var(--color-brick-red);
+}
+
+.ivy2 {
+    position: absolute;
+    position-anchor: --hero;
+    left: anchor(left);
+    bottom: anchor(bottom);
+    max-width: 20vw;
+    pointer-events: none;
 }
 
 /* Blockquote */
@@ -321,7 +333,23 @@ main {
     display: flex;
     /* flex: 1 1 auto; */
     justify-content: center;
-    margin: 3rem 0 3rem 0;
+    padding: 3rem 0 5rem 0;
+}
+
+.ivy3 {
+    position: absolute;
+    position-anchor: --about;
+    bottom: anchor(110%);
+    left: anchor(-2%);
+    width: 400px;
+}
+
+.ivy4 {
+    position: absolute;
+    position-anchor: --about;
+    right: anchor(right);
+    top: anchor(-10%);
+    width: 200px;
 }
 
 .about img {
@@ -341,6 +369,7 @@ main {
     overflow: auto;
     margin: 0 1rem;
     flex-shrink: 1;
+    anchor-name: --about;
 }
 
 .about__text p {
@@ -463,7 +492,7 @@ p.locations__blockquote {
 }
 
 .illustration {
-    width: 35%;
+    width: 30%;
     padding: 1.5rem 0;
 }
 
@@ -474,7 +503,7 @@ p.locations__blockquote {
     font-size: 1.4em;
     padding: 0.8rem;
     display: inline-block;
-    margin: 1.5rem 0;
+    /* margin: 1.5rem 0; */
     width: 100%;
     font-weight: 400;
 }
@@ -485,14 +514,21 @@ p.locations__blockquote {
     width: 100%;
 }
 
-/* Services Grid */
-
 .main__services {
     text-align: center;
     border: 1px solid var(--color-royal-ink);
     max-width: 1000px;
     padding-top: 4rem;
-    margin: 2rem auto;
+    margin: 3rem auto;
+    anchor-name: --services;
+}
+
+.ivy5 {
+    position: absolute;
+    position-anchor: --services;
+    right: anchor(right);
+    top: anchor(-6%);
+    width: 200px;
 }
 
 .main__services p {
@@ -517,7 +553,6 @@ p.locations__blockquote {
 
 .main__services-grid__item {
     text-align: center;
-    /* border: 1px solid var(--color-druid-green); */
 }
 
 .main__services-grid__item p {
@@ -555,6 +590,7 @@ p.locations__blockquote {
 .steps__container {
     background-color: var(--color-frosted-moss);
     text-align: center;
+    anchor-name: --steps;
 }
 
 .steps__container h3 {
@@ -611,6 +647,17 @@ p.locations__blockquote {
 .steps__description p {
     line-height: 1.8;
     letter-spacing: normal;
+}
+
+.ivy6 {
+    position: absolute;
+    position-anchor: --steps;
+    right: anchor(right);
+    top: anchor(-15%);
+    max-width: 70vw;
+    pointer-events: none;
+    opacity: 50%;
+
 }
 
 /* Footer */
@@ -689,6 +736,20 @@ p.locations__blockquote {
     text-align: center;
     display: block;
     margin: 2rem;
+    margin-bottom: 0;
+}
+
+.back-to-top-button {
+    display: none;
+    background-color:var(--color-midnight-ivy);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.back-to-top-button a {
+    color: var(--color-parchment);
+    text-decoration: none;
+    font-size: 2em;
 }
 
 /* Illustrations + Decorative Elements */
@@ -740,6 +801,10 @@ p.locations__blockquote {
         font-size: 1.5em;
     }
 
+    .steps__steps {
+        margin: 0 5rem;
+    }
+
     .header__social-icons {
         display: none;
     } 
@@ -747,6 +812,15 @@ p.locations__blockquote {
     .blockquote p {
         font-size: 0.8em;
     }
+
+    .ivy1, .ivy2, .ivy3, .ivy5,.ivy6 {
+        display: none;
+    }
+
+    .footer__links__column {
+        margin: 1rem 2rem;
+    }
+
 
 }
 
@@ -806,6 +880,61 @@ p.locations__blockquote {
         font-size: 0.8em;
     }
 
+    .illustration {
+        width: 25%;
+        padding: 0;
+    }
+
+    .steps__steps {
+        margin: 0 1rem;
+    }
+
+    .footer__links__columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__links__column {
+        text-align: center;
+        border-bottom: 2px solid var(--color-midnight-ivy);
+    }
+
+    .footer__links__column a {
+        font-size: 1.5em;
+    }
+
+    .footer__links__column p {
+        font-size: 3em;
+    }
+
+    .footer__socials-text {
+        font-size: 3em;
+    }
+
+    .footer__details {
+        background-image: url(../imgs/cardboard_ivory.jpg);
+        color: var(--color-parchment);
+        font-size: 2em;
+        color: var(--color-royal-ink);
+    }
+
+    .footer__details p {
+        padding: 1rem 2rem;
+    }
+
+    .back-to-top-button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .steps__steps {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        align-items: center;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -816,14 +945,6 @@ p.locations__blockquote {
 
     .Hero__navbar a {
         display: none;
-    }
-
-    .steps__steps {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        justify-content: space-around;
-        margin: 0;
     }
 
     .about__text {
