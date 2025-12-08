@@ -13,4 +13,5 @@ This is the final project for the Web Development course for the Masters of Grap
 ## Author
 
 Project Code: Wesley Proctor
+
 Source Design: [Vaughan House](https://vaughan-house.com/)
