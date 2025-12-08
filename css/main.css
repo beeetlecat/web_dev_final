@@ -331,7 +331,6 @@ main {
 
 .about {
     display: flex;
-    /* flex: 1 1 auto; */
     justify-content: center;
     padding: 3rem 0 5rem 0;
 }
@@ -409,7 +408,6 @@ main {
 }
 
 p.lowercase {
-    /* border: solid 1px var(--color-royal-ink); */
     padding: 2rem;
     margin: 0;
     display: inline-block;
